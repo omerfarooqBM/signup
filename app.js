@@ -35,7 +35,7 @@ function signup() {
         localStorage.setItem("list", JSON.stringify(users))
         message.innerText = "Account Created Successfully You are going to login page"
         setTimeout(() => {
-            location.href = "login.html"
+            location.href = "Profile.html"
         }, 2000)
     } else {
         message.innerText = "User Email Exists "
@@ -93,7 +93,7 @@ function logout() {
     localStorage.removeItem("login user")
     message.innerText = " Good Bye!"
     setTimeout(() => {
-        location.href = "login.html"
+        location.href = "Profile.html"
     }, 2000)
 }
 
