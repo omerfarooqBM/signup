@@ -35,7 +35,7 @@ function signup() {
         localStorage.setItem("list", JSON.stringify(users))
         message.innerText = "Account Created Successfully You are going to login page"
         setTimeout(() => {
-            location.href = "Profile.html"
+            location.href = "index.html"
         }, 2000)
     } else {
         message.innerText = "User Email Exists "
@@ -75,7 +75,7 @@ function login() {
         localStorage.setItem("login user", JSON.stringify(currentUser))
         message.innerText = "Welcome!";
         setTimeout(() => {
-            location.href = "index.html"
+            location.href = "home.html"
         }, 1000)
 
     } else {
@@ -93,7 +93,7 @@ function logout() {
     localStorage.removeItem("login user")
     message.innerText = " Good Bye!"
     setTimeout(() => {
-        location.href = "Profile.html"
+        location.href = "index.html"
     }, 2000)
 }
 
@@ -105,7 +105,7 @@ function getCurrentUser() {
     var info2 = document.getElementById("info2");
     var info3 = document.getElementById("info3");
     var info4 = document.getElementById("info4");
-    var info5 = document.getElementById("info5");
+    // var info5 = document.getElementById("info5");
     var info6 = document.getElementById("info6");
     var loginUser = JSON.parse(localStorage.getItem("login user"));
     welcome.innerText = `Welcome! ` + loginUser.fullName
@@ -113,7 +113,7 @@ function getCurrentUser() {
     info2.innerText = `Email: ` + loginUser.email
     info3.innerText = `Age: ` + loginUser.age
     info4.innerText = `Phone Number: ` + loginUser.number
-    info5.innerText = `Password: ` + loginUser.password
+    // info5.innerText = `Password: ` + loginUser.password
     info6.innerText = `Address: ` + loginUser.address
 
 }
@@ -124,41 +124,41 @@ var inputText = document.getElementById("inputText");
 
 
 // These are my Input Text Bar for Title and Description
-var inputTitle = document.createElement("input");
-inputTitle.setAttribute("type", "text");
-inputTitle.setAttribute("id", "input1");
-inputTitle.setAttribute("placeholder", "Title");
-inputTitle.setAttribute("class", "mb-3 ml-3 form-control form-group w-25");
+// var inputTitle = document.createElement("input");
+// inputTitle.setAttribute("type", "text");
+// inputTitle.setAttribute("id", "input1");
+// inputTitle.setAttribute("placeholder", "Title");
+// inputTitle.setAttribute("class", "mb-3 ml-3 form-control form-group w-25");
 
 
-// console.log(inputTitle);
-var inputDescription = document.createElement("input");
-inputDescription.setAttribute("type", "text");
-inputDescription.setAttribute("id", "input2");
-inputDescription.setAttribute("placeholder", "Description");
-inputDescription.setAttribute("class", "mb-3 ml-3 form-control form-group w-25");
-// console.log(inputDescription);
+// // console.log(inputTitle);
+// var inputDescription = document.createElement("input");
+// inputDescription.setAttribute("type", "text");
+// inputDescription.setAttribute("id", "input2");
+// inputDescription.setAttribute("placeholder", "Description");
+// inputDescription.setAttribute("class", "mb-3 ml-3 form-control form-group w-25");
+// // console.log(inputDescription);
 
 
-// Now Button for Submit input bar
-var submitbutton = document.createElement("button")
-var submitbuttonText = document.createTextNode("Submit")
-submitbutton.appendChild(submitbuttonText)
-submitbutton.setAttribute("class", "btn btn-outline-success mb-3 ml-3")
-submitbutton.setAttribute("onClick", "submit()")
+// // Now Button for Submit input bar
+// var submitbutton = document.createElement("button")
+// var submitbuttonText = document.createTextNode("Submit")
+// submitbutton.appendChild(submitbuttonText)
+// submitbutton.setAttribute("class", "btn btn-outline-success mb-3 ml-3")
+// submitbutton.setAttribute("onClick", "submit()")
 
 
 // Post Function
-function post() {
+// function post() {
 
-    document.getElementById("post").disabled = true;
+//     document.getElementById("post").disabled = true;
 
-    // appending my child to Parent
-    inputText.appendChild(inputTitle)
-    inputText.appendChild(inputDescription)
-    inputText.appendChild(submitbutton)
+//     // appending my child to Parent
+//     inputText.appendChild(inputTitle)
+//     inputText.appendChild(inputDescription)
+//     inputText.appendChild(submitbutton)
 
-}
+// }
 
 
 // For posting 
