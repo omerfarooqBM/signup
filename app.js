@@ -166,26 +166,26 @@ var ul = document.getElementById("ul");
 
 
 // Submiting input to post
-function submit() {
-    var li = document.createElement("li");
+// function submit() {
+//     var li = document.createElement("li");
 
-    var card = ` <div class="mt-3 mb-2 card bg-white text-dark" style="width: 35rem; border: none;">
-    <img src="image/bg2.jpg" class="card-img-top" alt="post-image">
-    <div class="card-body">
-        <h5 class="card-title">${inputTitle.value}</h5>
-        <p class="card-text">${inputDescription.value}</p>
-    </div>
-</div>`;
-    // console.log(card);
-    li.innerHTML = card;
-    ul.appendChild(li);
-    document.getElementById("post").disabled = false;
-    if (inputTitle.value === "" || inputDescription.value === "") {
-        ul.appendChild(li).remove()
-    }
-    inputTitle.value = "";
-    inputDescription.value = "";
-    inputText.removeChild(inputTitle)
-    inputText.removeChild(inputDescription)
-    inputText.removeChild(submitbutton)
-}
+//     var card = ` <div class="mt-3 mb-2 card bg-white text-dark" style="width: 35rem; border: none;">
+//     <img src="image/bg2.jpg" class="card-img-top" alt="post-image">
+//     <div class="card-body">
+//         <h5 class="card-title">${inputTitle.value}</h5>
+//         <p class="card-text">${inputDescription.value}</p>
+//     </div>
+// </div>`;
+//     // console.log(card);
+//     li.innerHTML = card;
+//     ul.appendChild(li);
+//     document.getElementById("post").disabled = false;
+//     if (inputTitle.value === "" || inputDescription.value === "") {
+//         ul.appendChild(li).remove()
+//     }
+//     inputTitle.value = "";
+//     inputDescription.value = "";
+//     inputText.removeChild(inputTitle)
+//     inputText.removeChild(inputDescription)
+//     inputText.removeChild(submitbutton)
+// }
