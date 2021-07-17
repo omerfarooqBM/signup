@@ -162,7 +162,7 @@ var inputText = document.getElementById("inputText");
 
 
 // For posting 
-var ul = document.getElementById("ul");
+// var ul = document.getElementById("ul");
 
 
 // Submiting input to post
